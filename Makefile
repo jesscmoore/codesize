@@ -80,7 +80,7 @@ prep_stats:
 	ruff --statistics check $(FILE)
 
 prep_large:
-	python support/print_large_files.py $(LIMIT)
+	python src/codesize/print_large_files.py $(LIMIT)
 
 prep_fix:
 	ruff --fix check $(FILE)
