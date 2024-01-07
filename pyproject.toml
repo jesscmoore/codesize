@@ -1,0 +1,79 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codesize"
+version = "0.0.1"
+authors = [
+  { name="Jess Moore", email="jessclaremoore@gmail.com" },
+]
+description = "A simple utility to return the number of lines of large code files"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["file", "size", "code"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GPLv3 License",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "glob",
+    "argparse",
+]
+
+
+# [tool.setuptools.packages]
+# find = {}
+
+
+[tool.setuptools]
+include-package-data = false
+
+
+[tool.setuptools.packages.find]
+include = ["travel*"]
+exclude = [
+    "tests*",
+    "data*",
+    "log*",
+    "tmp*",
+]
+
+[project.urls]
+Homepage = "https://github.com/jesscmoore/codesize"
+
+[tool.ruff]
+line-length = 80  # Set the maximum line length
+
+
+[tool.ruff.lint]
+extend-select = [
+    "E501",  # Add the `line-too-long`
+    "C90",  # McCabe complexity
+    "UP",   # pyupgrade
+    "D",    # pydodcstyle
+    "I",    # isort
+    "W",    # pycodestyle
+    "PLR0915"  # pylint too-many-statements
+]
+ignore = [  # Ignore rules
+    "D100",  # Missing docstring in public module
+    "D104",  # Missing docstring in public package
+    "D107",  # Missing docstring in `__init__`
+    "E902",  # No such file or directory (os error 2)
+]
+
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"  # Using pydocstyle rules for google style
+
+
+[tool.ruff.lint.pylint]
+max-statements = 50  # Default: 50
+
+[tool.ruff.lint.mccabe]
+# Flag errors (`C901`) whenever the complexity level exceeds 5.
+max-complexity = 5
