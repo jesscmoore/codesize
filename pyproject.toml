@@ -33,12 +33,9 @@ include-package-data = false
 
 
 [tool.setuptools.packages.find]
-include = ["travel*"]
+include = ["src/codesize*"]
 exclude = [
     "tests*",
-    "data*",
-    "log*",
-    "tmp*",
 ]
 
 [project.urls]
