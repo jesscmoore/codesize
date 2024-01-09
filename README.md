@@ -16,31 +16,21 @@ Demonstrator: [https://anuco.au](https://anuco.au)
 ## Installation  <a name="install"></a>
 <font size="1">[Back](#top)</font>
 
+Install the repo as a separate package with:
 ```
-$ git clone https://github.com/anusii/travelco2e.git
-$ cd travelco2e
-$ make install
-```
-
-Note that newer python installations are moving to `pipx` and some
-requisite packages are also required. However I had to still use
-`--break-system-packages` for the dash packages to be found. Might be
-my (gjw) setup.
-
-```
-$ pip install dash dash_mantine_components --break-system-packages
-$ sudo apt install python3-dotenv
-$ pipx install -e .
+$ git clone https://github.com/jesscmoore/codesize.git
+$ cd codesize
+$ pip install -e .
 ```
 
-Run locally in development mode (supports hot reload). This will create `.env` with development settings and the dashboard at https://127.0.0.1:[PORT]
-
+Or install it with a package by adding the following to your requirements list:
 ```
-$ make app
+"codesize @ git+https://github.com/jesscmoore/codesize.git"
 ```
-
-You can use option SKIP_LOGIN=True environment variable in `.env` to skip the login authentication and directly access the dashboard after click the 'Login' button. This is useful for testing the dashboard locally outside the ANU when VPN service is not available and LDAP server cannot be connected.
-
+and then rebuild your package with:
+```
+pip install -e .
+```
 
 ## Demo  <a name="demo"></a>
 <font size="1">[Back](#top)</font>
