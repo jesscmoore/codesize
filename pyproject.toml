@@ -24,20 +24,6 @@ dependencies = [
 ]
 
 
-# [tool.setuptools.packages]
-# find = {}
-
-
-[tool.setuptools]
-include-package-data = false
-
-
-[tool.setuptools.packages.find]
-include = ["src/codesize*"]
-exclude = [
-    "tests*",
-]
-
 [project.urls]
 Homepage = "https://github.com/jesscmoore/codesize"
 
