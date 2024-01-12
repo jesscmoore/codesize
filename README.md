@@ -1,15 +1,11 @@
 # codesize
 
+*Author: Jess Moore*
+
 A simple library to print the number of lines of the largest code files in a project.
 
-This is useful to identify large files which generally should be reduced to make code easier to
- maintain.
+This package is useful to identify large files which generally should be reduced to make code easier to maintain. Writing short readable modular single purpose methods and easy to interpret code files is supported by this package which shows large files. Good practice is to limit files to less than 400-500 lines.
 
-Writing short readable modular single purpose methods and easy to interpret code files is
-supported by this package which shows large files and how to use ruff (Limit files to < 500
-lines).
-
-Demonstrator: [https://anuco.au](https://anuco.au)
 
 ## Table of Contents
 - [Installation](#install)
