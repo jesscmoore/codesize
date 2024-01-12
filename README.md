@@ -52,7 +52,8 @@ files.large(limit=400, ext="dart")
 Or on command line, list dart files larger than 400 lines
 
 ```
-python3 examples/print_large_files.py 400```
+python3 examples/print_large_files.py 400
+```
 
 
 Alternatively use the make rule
@@ -71,7 +72,7 @@ Good practice is limiting file size to 400-500 lines.
 
 Our makefile also has several `ruff` linter commands. The errors that are safely fixable with --fix option are marked with `*`
 
-1. List lint issues of a specific file with `make prep FILE=[file]` or for whole project with `make prep`.
-2. Show summary of issues of a specific file with `make prep_stats FILE=[file]` or for whole project with `make prep_stats`.
-3. Automatically fix the safely fixable issues  of a specific file with `make prep_fix FILE=[file]` or for whole project with `make prep_fix`.
-4. Show summary of number of a specific rule violation in files with issues for a specific rule e.g. E501 with `make prep_rules RULE=E501` or for the default D1 (all docstring) rules with `make prep_rules`.
+1. `make prep FILE=[file]` - List lint issues of a specific file or for whole project use `make prep`.
+2. `make prep_stats FILE=[file]` - Show summary of issues of a specific file or for whole project with `make prep_stats`.
+3. `make prep_fix FILE=[file]` - Automatically fix the safely fixable issues  of a specific file or for whole project with `make prep_fix`.
+4. `make prep_rules RULE=E501` - Show summary of number of a specific rule violation in files with issues for a specific rule e.g. E501 (long lines), or for the default D1 (all docstring) rules with `make prep_rules`.
