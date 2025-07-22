@@ -1,10 +1,21 @@
 # codesize
 
-*Author: Jess Moore*
+**CLI to identify the largest code files in a project and show their number of lines.**
 
-A simple library to print the number of lines of the largest code files in a project.
+*Time-stamp: <Friday 2025-07-18 10:54:11 +1000 Jess Moore>*
 
-This package is useful to identify large files which generally should be reduced to make code easier to maintain. Writing short readable modular single purpose methods and easy to interpret code files is supported by this package which shows large files. Good practice is to limit files to less than 400-500 lines.
+*Authors: Jess Moore*
+
+*License: GNU GPL V3*
+
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://raw.githubusercontent.com/jesscmoore/codesize/main/LICENSE)
+
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://raw.githubusercontent.com/jesscmoore/codesize/main/LICENSE)
+[![Last Updated](https://img.shields.io/github/last-commit/jesscmoore/codesize?label=last%20updated)](https://github.com/jesscmoore/codesize/commits/main/)
+[![GitHub commit activity (main)](https://img.shields.io/github/commit-activity/w/jesscmoore/codesize/main)](https://github.com/jesscmoore/codesize/main)
+
+This package is useful to identify large files for clean up to reduce technical debt and make code easier to maintain. Writing short readable modular single purpose methods and easy to interpret code files is supported by this package which shows large files. Good practice is to limit files to less than 400-500 lines.
 
 
 ## Table of Contents
